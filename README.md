@@ -1,2 +1,2 @@
-# careers-website
-A careers website
+# careers-blog
+A careers blog
