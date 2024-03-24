@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
-</head>
-<body>
-    {{ title }}
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block menu %}
+    <header>
+        <ul class='main-menu'>
+            <li><a href="#">ГЛАВНАЯ</a></li>
+            <li><a href="#">БЛОГ</a></li>
+            <li><a href="#">РЕГИСТРАЦИЯ</a></li>
+            <li><a href="#">ЛОГИН</a></li>
+            <li><a href="#">АККАУНТ</a></li>
+            <li><a href="#">СОЗДАТЬ</a></li>
+            <li><a href="#">ВЫХОД</a></li>
+        </ul>   
+    </header>
+{% endblock menu %}
+
+
+{% block content %}
+    <div class='content'>
+        <h1> Dinamic content </h1>
+    </div>
+{% endblock content %}
+
+
+{% block main_page %}
+    <div class='content'>
+        <h1> Yeah </h1>
+    </div>
+{% endblock main_page %}
+
+
+{% block footer %}
+    <footer>
+        <div class='footer_text'>
+            <p>
+                by Anatoly Gvozdev
+                <br/>
+                ©2024
+            </p>
+        </div>
+    </footer>
+{% endblock footer %}
