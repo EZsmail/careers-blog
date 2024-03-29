@@ -1,62 +1,113 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 html, body {
     height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 /* MAIN MENU */
 
 header {
-    height: auto;
-    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: #f0f0f0; 
+    width: 80%;
+    height: 10%;
+}
+
+.header-logo {
+    height: 100%;
+}
+
+.logo-header {
+    max-height: 100%;
 }
 
 .main-menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .main-menu a {
     text-decoration: none;
-    color: #000000;
-    font-size: medium;
+    color: #333;
+    font-size: 16px; 
+    font-weight: bold; 
 }
 
-.main-menu li {
-    margin: 0 0.5%;
-    padding: 1% 1%;
-    list-style: none;
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-}
-
-.main-menu li:hover {
-    transition-duration: 1ms;
-    background-color: #eaeaea;
+.main-menu a:hover {
+    color: #007bff; 
 }
 
 
-.content {
-    text-align: center;
-}
 
-.main-page {
-    text-align: center;
-}
 
 /* WRAPPER */
 
 .wrapper {
     display: flex;
+    align-items: center;
     flex-direction: column;
     flex: 0 1 auto;
     height: 100%;
 }
+
+/* MAIN  */
+
+.info {
+    margin: auto 0; 
+    width: 80%;
+
+}
+
+.description {
+    padding: 20px; 
+}
+
+.name {
+    text-align: center;
+    font-size: 18px; /* Размер шрифта, укажите свой размер */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+.desc {
+    margin-top: 10px; /* Отступ сверху, укажите свой размер */
+}
+
+.checkmark li {
+    list-style: none;
+    margin-bottom: 5px; /* Отступ между кнопками, укажите свой размер */
+}
+
+.checkmark a {
+    display: block;
+    margin-top: 1%;
+    padding: 10px 20px; 
+    background-color: #007bff80; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    text-align: center;
+}
+
+.checkmark a:hover {
+    background-color: #0056b3; 
+}
+
 /* FOOTER */
 
 footer {

@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png') }}">
+    <link rel="manifest" href="img/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     {% block title %}
@@ -20,7 +24,23 @@
 <body>
     <div class='wrapper'>
         {% block menu %}
-
+            <header>
+                <div class='header-logo' >
+                    <a href="{{ url_for('home') }}">
+                        <img src="{{ url_for('static', filename='img/Untitled_logo_1_free-file-aMAxPhWrB-transformed-Photoroom.png-Photoroom.png') }}" alt="logo" class='logo-header'>
+                    </a>
+                </div>
+                <ul class='main-menu'>
+                    <li><a href="{{ url_for('home') }}">ГЛАВНАЯ</a></li>
+                    <li><a href="#">БЛОГ</a></li>
+                    <li><a href="#">РЕГИСТРАЦИЯ</a></li>
+                    <li><a href="#">ЛОГИН</a></li>
+                    <li><a href="#">АККАУНТ</a></li>
+                    <li><a href="#">СОЗДАТЬ</a></li>
+                    <li><a href="#">ВЫХОД</a></li>
+                
+                </ul>   
+            </header>
         {% endblock menu %}
 
 
@@ -35,7 +55,15 @@
 
 
         {% block footer %}
-
+            <footer>
+                <div class='footer_text'>
+                    <p>
+                        by Anatoly Gvozdev
+                        <br/>
+                        ©2024
+                    </p>
+                </div>
+            </footer>
         {% endblock footer %}
     </div>
 </body>
